@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the entire page */
+  background-image: url("resource/images/back_img2.jpg");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/*sidbar style*/
+.sidebar {
+  width: 195px;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  position: absolute; /* Fixes the sidebar position */
+  height: 100%;
+  border-radius: 0 80px 80px 0; /* Rounds the right corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829); /* Adds a subtle shadow */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #101010;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.sidebar ul {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 30px; /* Adds space between list items */
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #1d1b1b;
+  padding: 10px;
+  border-radius: 5px; /* Rounds the corners of links */
+  transition: 0.2s ease, color 0.2s ease; /* Adds transition effect for hover */
+}
+
+.sidebar li:hover {
+  background-color: transparent; /* Changes background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829); /* Adds shadow on hover */
+  padding: 10px;
+  width: 195px;
+  border-radius: 90px 10px 10px 90px; /* Rounds corners on hover */
+}
+
+.sidebar li:hover a {
+  color: #f7f0f0;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829);
+  width: 100%;
+  margin-left: 230px;
+  border-radius: 10px 10px 0px 200px;
+  position: fixed;
+  z-index: 1000; /* Place it above other elements */
+  padding: 15px;
+}
+
+.nav-item {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 70%;
+}
+
+.map {
+  top: -15%; /* Positions it 65% from the top */
+  height: 400px;
+  width: 60%;
+  margin-top: 40vh;
+  position: absolute;
+  left: 25%; /* Centers it horizontally */
+}

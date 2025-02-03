@@ -1,0 +1,324 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the entire page */
+  background-image: url("resource/images/back_img2.jpg");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+/*sidbar style*/
+.sidebar {
+  width: 195px;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  position: absolute; /* Fixes the sidebar position */
+  height: 100%;
+  border-radius: 0 80px 80px 0; /* Rounds the right corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829); /* Adds a subtle shadow */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #101010;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.sidebar ul {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 30px; /* Adds space between list items */
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #1d1b1b;
+  padding: 10px;
+  border-radius: 5px; /* Rounds the corners of links */
+  transition: 0.2s ease, color 0.2s ease; /* Adds transition effect for hover */
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  background-color: transparent; /* Changes background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829); /* Adds shadow on hover */
+  padding: 10px;
+  width: 195px;
+  border-radius: 90px 10px 10px 90px; /* Rounds corners on hover */
+}
+
+.sidebar li:hover a {
+  color: #f7f0f0;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.829);
+  width: 100%;
+  margin-left: 230px;
+  border-radius: 10px 10px 0px 200px;
+  position: fixed;
+  z-index: 1000; /* Place it above other elements */
+  padding: 15px;
+}
+
+.nav-item {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 70%;
+}
+
+/* card style */
+
+.card p {
+  color: hsl(147, 14%, 88%);
+
+  font-weight: bold;
+}
+
+.p1 {
+  color: hsl(120, 6%, 3%);
+
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgb(238, 250, 254);
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  padding: 30px;
+  margin: 20px;
+}
+
+.btn {
+  float: right;
+}
+
+.card1 {
+  border-top: 3px solid beige;
+}
+.card2 {
+  border-top: 3px solid black;
+}
+.card3 {
+  border-top: 3px solid white;
+}
+.card4 {
+  border-top: 3px solid black;
+}
+
+h2 {
+  color: hsla(194, 98%, 58%, 0.982);
+  font-weight: 600px;
+  font-weight: bold;
+}
+
+h3 {
+  color: hsla(0, 0%, 0%, 0.982);
+  font-weight: 600px;
+  font-weight: bold;
+}
+@media (min-width: 1000px) {
+  .container1 {
+    position: relative; /* Ensure position is set */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px; /* Space for sidebar */
+    margin-top: 80px; /* Space for nav-bar */
+    padding: 20px;
+  }
+
+  .side-card {
+    position: relative;
+    top: 150px;
+  }
+  .card {
+    width: 15%;
+  }
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 15px;
+  height: 40px;
+  width: 120px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #79cbee;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #eaf7f7e7;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 100px #cec8c8;
+  color: #111010;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(95) translateX(2px);
+}
+
+/* Popup Form Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 400px;
+  height: 400px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: solid 1px #8d8d8d;
+  border-radius: 20px;
+}
+.popup h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.popup h5 {
+  color: red;
+}
+.form {
+  max-width: 300px;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn1 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: solid 1pxrgb (123, 127, 140);
+  border-bottom: solid 1px #111213;
+  background: linear-gradient(135deg, rgb(87, 89, 92), #000d3848);
+  color: #fff;
+  font-weight: bolder;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px rgb(87, 89, 92),
+    inset 0px -4px 5pxrgb (140, 144, 158);
+}
+
+.btn1:active {
+  box-shadow: inset 0px 4px 5px #5d6166, inset 0px -4px 5px rgb(125, 128, 137);
+  transform: scale(0.995);
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-field .label2 {
+  position: absolute;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  left: 15px;
+  transform: translateY(0.6rem);
+  transition: all 0.3s ease;
+}
+
+.input-field .input2 {
+  padding: 10px 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: solid 1px #8d8d8d;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.input-field .input2:focus,
+.input-field .input2:valid {
+  outline: none;
+  border: solid 1px #0034de;
+}
+
+.input-field .input2:focus ~ .label2,
+.input-field .input2:valid ~ .label2 {
+  transform: translateY(-51%) translateX(-10px) scale(0.8);
+  background-color: #fff;
+  padding: 0px 5px;
+  color: #0034de;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 100px;
+}
+
+.btn2 {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  width: 45px;
+  height: 45px;
+  border-radius: 90%; /* Makes it circular */
+  font-size: 24px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
