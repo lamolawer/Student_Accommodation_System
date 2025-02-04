@@ -59,8 +59,7 @@ mysqli_close($link); //closing the database connection
 
 <!-- campus map -->
     <div id="campus" class="map"></div>
-    <!-- used google maps free api and used the coordinates that i want to be shown onn the map-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8NTAmKHwvhGnA-50CPkWs1lqJP3Yayko&callback=initMap" async defer></script>
+    <!-- your going to use your google free or paid api key to access that map below-->
 <script>
         function initMap(){ //function to initialize the map
             var mapOptions = {
